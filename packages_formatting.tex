@@ -1,0 +1,106 @@
+%\usepackage[utf8]{inputenc}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Packages required for page formatting
+
+\usepackage[letterpaper, top=1in, bottom=1.25in, left=1.5in, right=1in, marginparsep=0in, footskip=0.75in, headheight=15pt]{geometry} % Defines the global margins of the document
+% Main text body:
+% Top and right margins are 1in.
+% Bottom margin is 1.25in.
+% Left margin is 1.5in.
+% Space between text and right margin is 0 (marginparsep=0in)
+% Top of the header is 0.5in from the top of the page by default
+% Bottom of the footer is 0.5in from the bottom of the page.  Configure this by setting footskip to be 0.5in less than the bottom margin.
+% Header height just defines the size of the header box.  It's set to 15pt to suppress a warning and doesn't actually cause anything to change.
+\usepackage{fancyhdr} % necessary to change heading styles
+\usepackage{caption} % Loads a function that will help shrink your list of figures and tables
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Recommended packages
+% Modify as needed
+
+\usepackage{amsmath,amsthm,amssymb,amsfonts, color, comment, graphicx, environ}
+\usepackage{epsfig}
+\usepackage{epstopdf}
+\usepackage{enumitem}
+\usepackage{changepage}
+\usepackage{appendix}
+\usepackage[hidelinks]{hyperref} % required to keep text uncolored but still hyperlinkable
+\usepackage{mathrsfs}
+\usepackage{bbm}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage{ulem}
+\usepackage{setspace}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{indentfirst}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{comment} 
+\usepackage{subcaption}
+
+\usepackage{etoolbox}
+
+\usepackage{pdfpages}
+\usepackage{xcolor}
+\usepackage{makecell}
+
+% Use a referencing package
+%\usepackage{biblatex}
+\usepackage{cite}
+
+% Other packages
+%\usepackage{enumerate}
+%\usepackage{breqn}
+%\usepackage{gensymb}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Chanigng styles for pages
+% Necessary for ensuring page numbers are in the right places
+
+% Positioning of text for Abstract
+% \fancypagestyle{abstract}{%
+% \fancyhf{} % start with empty header and footer
+% \fancyfoot[C]{\thepage} % Place the page number on the bottom center
+% %\renewcommand{\headrulewidth}{0pt}% 
+% \renewcommand{\footrulewidth}{0in}%
+% }
+
+% Page number position for all other Arabic numbered pages.
+% This is user-defined:
+\fancypagestyle{mainhead}{%
+\fancyhf{} % start with empty header and footer
+\fancyhead[R]{\thepage} % Place the page number on the top right
+\renewcommand{\headrulewidth}{0pt} % remove header line
+\renewcommand{\footrulewidth}{0pt}% remove footer line
+%\addtolength{\topmargin}{0in}
+%\setlength{\headheight}{0in}
+}
+
+% Page number for beginning pages of Chapter, Appendix, and Reference sections:
+% The "plain" style is the default, but you can define your own style using the code template below:
+% \fancypagestyle{chapterhead}{%
+% \fancyhf{} % start with empty header and footer
+% \fancyfoot[C]{\thepage} % Place the page number on the bottom center
+% %\renewcommand{\headrulewidth}{0pt}% 
+% \renewcommand{\footrulewidth}{0in}%
+% }
+
+
+% Code for dealing with referencing the References section in the table of contents
+\patchcmd{\thebibliography}{\section*}{\section}{}{}
+\renewcommand\bibname{References}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Define your own functions
+
+% Definitions for fancy math symbols
+\def\ones{\mathbbm{1}}
+\def\Re{\mathbb{R}}
+\def\Ze{\mathbb{Z}} 
+
+
+
+

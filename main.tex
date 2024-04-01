@@ -1,0 +1,186 @@
+% This is a LaTeX template desgined to comply with the UC Merced Disseration Guidelines.  It uses the `report' document class as the base and changes the location of page numbers and ensures that content is within the specified margins.  
+
+\documentclass[12pt,notitlepage]{report}
+
+% import all the packages and formatting options needed
+\input{packages_formatting.tex}
+
+% create title page
+% document 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PRELIMINARY PAGES START BELOW
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% preliminary pages use roman numeral page numbers at the bottom
+\pagenumbering{roman}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Title Page
+\input{Preliminary_Pages/title_page.tex}
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Copyright Page
+\input{Preliminary_Pages/copyright_page.tex}
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dedication Page
+% optional page
+\input{Preliminary_Pages/dedication_page.tex}
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Numbering starts here
+\setcounter{page}{3}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Signature Page
+% Do not include a scanned copy of the signatures in the full document when submitting the dissertation.
+\input{Preliminary_Pages/signature_page.tex}
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Table of Contents
+\tableofcontents
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% List of Symbols
+\input{Preliminary_Pages/list_of_symbols.tex}
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% List of Figures
+\input{Preliminary_Pages/list_of_figures.tex}
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% List of Tables
+\input{Preliminary_Pages/list_of_tables.tex}
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% List of Illustrations
+% Assuming that figures and illustrations are distinct.
+% \input{Preliminary_Pages/list_of_illustrations.tex}
+% \newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Acknowledgements
+\input{Preliminary_Pages/acknowledgements_page.tex}
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Curriculum Vitae
+\input{Preliminary_Pages/cv.tex}
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Abstract
+\input{Preliminary_Pages/abstract.tex}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% MAIN TEXT BEGINS BELOW
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Set page numbering to arabic
+% Change header-footer styling so that each page number is at:
+% The bottom centered on a new section page, or
+% The top right on any other page
+\pagenumbering{arabic}
+\pagestyle{mainhead}
+%\pagestyle{fancy}
+%\thispagestyle{plain}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Chapter 1: Intro Chapter
+
+\chapter{Introduction}
+\label{chapter:intro}
+\input{Chapters/Chapter_1.tex}
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Chapter 2: This is the title of one project
+
+\chapter{This is the title of one project}
+\label{chapter:chapter_2}
+\input{Chapters/Chapter_2.tex}
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Chpater 3: This is the title of another project
+
+\chapter{This is the title of another project}
+\label{chapter:chapter_3}
+\input{Chapters/Chapter_3.tex}
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Chapter 4: Conclusion
+
+\chapter{Conclusion}
+\label{chapter:conclusion}
+\input{Chapters/Chapter_4.tex}
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Start of the Appendices
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\appendix % This command starts the appendix.  Section numbering switches to A,B,C, etc.
+
+% Make sure your list of figures and tables do not include items in the Appendices.  Adding these two lines at the start of the Appendix shoudl do the trick.
+\captionsetup[figure]{list=no}
+\captionsetup[table]{list=no}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Appendix A: One Appendix
+
+\chapter{This is the first appendix}
+\label{chapter:appendix_a}
+\input{Appendices/Appendix_A.tex}
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Appendix B: Another Appendix
+
+\chapter{This is the second appendix}
+\label{chapter:appendix_b}
+\input{Appendices/Appendix_B.tex}
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Start of the References
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% References section at the end of the document
+
+\bibliographystyle{plain}
+
+% Input references from a bbl file
+%\input{ref_out.bbl}
+
+% Input references from a bib file
+\begingroup
+% Use the \raggedright command inside a group to "dejustify" text, like a Word document usually has by default.
+\raggedright
+\bibliography{references.bib}
+
+\endgroup
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% That's it, you're done!!!
+
+\end{document}

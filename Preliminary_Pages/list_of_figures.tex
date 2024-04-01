@@ -1,0 +1,18 @@
+%Include separate page/s for each type of list. Include symbols, tables, figures, and illustrations int he text section only (do not include those in your appendix/appendices)
+
+%This list will automatically be populated with each instance of `\begin{figure} ... \end{figure}`.  The recommended structure to follow is:
+
+%\begin{figure}[hbtp]
+%	\centering
+%	\includegraphics[width=\textwidth]{location_of_figure.png}
+%	\caption[Text for List of Figures]{Main Caption Text}
+%	\label{fig:fig1}
+%\end{figure}
+
+% "Text for List of Figures" will populate the contents for List of Figures.  If this field is left blank, then "Main Caption Text" will populate the List of Figures instead.
+
+% The caption is below the image in a figure per the dissertation guidelines.
+
+\phantomsection
+\addcontentsline{toc}{section}{List of Figures}
+\listoffigures

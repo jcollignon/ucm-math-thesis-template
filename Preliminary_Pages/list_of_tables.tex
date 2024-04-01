@@ -1,0 +1,22 @@
+%Include separate page/s for each type of list. Include symbols, tables, figures, and illustrations in the text section only (do not include those in your appendix/appendices)
+
+%This list will automatically be populated with each instance of `\begin{figure} ... \end{figure}`.  The recommended structure to follow is:
+
+%\begin{table}[hbtp]
+%	\centering
+%	\caption[Text for List of Tables]{Main Caption Text}
+%	\begin{tabular}{|c|c|c|c|}
+%	\hline
+%	This & is & a & table.
+%	\hline
+%	\end{tabular}
+%	\label{tab:tab1}
+%\end{figure}
+
+% "Text for List of Tables" will populate the contents of List of Tables.  If this field is left blank, then "Main Caption Text" will populate the List of Tables instead.
+
+% The caption is below the image in a figure per the dissertation guidelines.
+
+\phantomsection
+\addcontentsline{toc}{section}{List of Tables}
+\listoftables
