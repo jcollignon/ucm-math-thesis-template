@@ -3,7 +3,7 @@ This is a modification of the built-in `report` document class LaTeX template fo
 
 The most recent UC Merced Dissertation Guidelines document is found here: https://graduatedivision.ucmerced.edu/sites/graduatedivision.ucmerced.edu/files/documents/PDFs/ucm_thesis_dissertation_manual.pdf
 
-## 1. File Structure
+## 1. Repo Structure
 
 In the primary folder, you will find `main.tex` which is the file that will need to be compiled each time to produce the document (`main.pdf`).  It uses a modular structure in that the scripts it calls are found in subfolders within this repo.  
 
@@ -19,7 +19,21 @@ The three folders that contain all of the `.tex`  files are the `Preliminary_Pag
 
 All images for figures are placed within subdirectories of the `Figures` folder.  Each subdirectory should correspond to a single chapter in order to conveniently ensure the locations of each image in a chapter are easy to grab.  An example image `figure_placeholder.png` is in a subdirectory whose relative directory is `Figures/Chapter_1/figure_placeholder.png`.
 
-### 1c. Full Structure
+### 1c. References
+
+In the main directory there is a file named `references.bib` that contains reference information on papers used for doing in-text citations.  Citation info can be collected from Google Cholar on a paer you are referencing.  Update the reference as needed, especially if there's info that is not showing up or is incorrect.
+
+### 1d. Packages
+
+In the main directory there is a file named `packages_formatting.tex` which is where all the `usepackage{}` commands and formatting specifications are called.  Additional detail is provided on the parameters of the package.  A couple of important packages to take note of are:
+
+- `\usepackage{geometry}`: used to specify the type of paper (8.5" x 11") and all of the margins of the document.
+- `\usepackage{fancyhdr}`: used to customize the areas in the margins of the document, such as the location of page numbers.
+- `\usepackage{caption}`: useed to ensure that figures and tables placed in the appendices do not appear in the list of figures/tables as per the guidelines.  This is needed to call `\captionsetup[figure]{list=no}` and `\captionsetup[table]{list=no}` at the start of the Appendices.
+
+Other packages can be added as needed.
+
+### 1e. Full Structure
 The detailed file structure in this repo is defined as follows:
 ```
 .
