@@ -77,7 +77,7 @@ A figure block should look like the following:
   \label{fig:figure1}
 \end{figure}
 ```
-All captions for figures should be below the figure.  The list of figures should contain the title of the figure, which you can enter in `List of Figures text`.  Always place `\label` immediately following the caption to ensure the correct page number is shown in the list of figures.  If the figure cannot fit on the same page as the caption, the page number containing the title and caption of the figure will be referenced in the list of tables.
+All captions for figures should be below the figure.  The list of figures should contain the title of the figure, which you can enter in `List of Figures text`.  Always place `\label` immediately following the caption to ensure the correct page number is shown in the list of figures.  If the figure cannot fit on the same page as the caption, the page number containing the title and caption of the figure will be referenced in the list of figures.
 
 ### 3b. Adding a Table
 
