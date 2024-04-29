@@ -33,6 +33,9 @@ In the main directory there is a file named `packages_formatting.tex` which is w
 
 Other packages can be added as needed.
 
+### 1e. References
+The primary directory contains a file names `references.bib` which stores all bibiolographical information in the BibTex format.  For each paper you ned to cite, got th Google Scholar, type the name of the paper, click "Cite", and then click the "BibTex" option.  You'll be given the formatted BibTex code for that paper that you can copy and paste into `references.bib`.  If there are issues inside the formatted code, edit it in a way where the original info is still interpretable.  The end of the `main.tex` script has a section which loads the references section showing only the materials cited.  You can add as many references in the bib fiel as you like, but only the sources you have cited in the paper will be generated in the output pdf file, so go crazy!
+
 ### 1e. Full Structure
 The detailed file structure in this repo is defined as follows:
 ```
