@@ -1,6 +1,8 @@
 # ucm-math-thesis-template
 This is a modification of the built-in `report` document class LaTeX template for writing a dissertation at UC Merced aimed at satisfying the dissertation guidelines.  Please note this repo does not contain its own `.cls` file.
 
+DISCLAIMER: THIS TEMPLATE HAS NOT YET BEEN VERIFIED OFFICIALLY TO BE SATISFACTORY YET.  I SHOULD HAVE AN ANSWER TO THIS BY THE END OF 2024 AND WILL UPDATE THIS ACCORDINGLY.
+
 The most recent UC Merced Dissertation Guidelines document is found here: https://graduatedivision.ucmerced.edu/sites/graduatedivision.ucmerced.edu/files/documents/PDFs/ucm_thesis_dissertation_manual.pdf
 
 ## 1. Repo Structure
