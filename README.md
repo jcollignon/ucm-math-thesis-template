@@ -3,7 +3,7 @@ This is a modification of the built-in `report` document class LaTeX template fo
 
 The most recent UC Merced Dissertation Guidelines document is found here: https://graduatedivision.ucmerced.edu/sites/graduatedivision.ucmerced.edu/files/documents/PDFs/ucm_thesis_dissertation_manual.pdf
 
-The template provided in this repository has been used to prepare my dissertation, and the content submitted used has passed the necessary checks on the Proquest platform on July 24th, 2024.
+The template provided in this repository has been used to prepare my dissertation, and the content submitted has passed the necessary checks on the Proquest platform on July 24th, 2024.
 
 DISCLAIMER: While the tools I used to format my dissertation were compliant with the guidelines, not all guidelines applied to my document.  As such, you may encounter some elements (such as illustrations, etc) that have not been adjusted to meet the guidelines.  If you encounter anything that does not meet the current dissertation guidelines, please let me know and I will update the repo periodically.  If you have formatting code to send me so I can test to see if it works with this template, please include this under Issues.
 
