@@ -6,3 +6,5 @@
 - Currently not setup to change how footnotes and endnotes are formatted.  Default setting is currently applied, haven't checked if this meets the guidelines.
 
 ## 2. Recent Changes
+
+TBD
