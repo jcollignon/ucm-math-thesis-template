@@ -9,11 +9,6 @@ DISCLAIMER: While the tools I used to format my dissertation were compliant with
 
 Below is information on the structure of this repository, conventions used for some elements throughout the template, and other possible suggestions that have come to mind.
 
-## 0. Current suggestions to investigate
-
-- Figure: In one `figure` environment, images and captions always overflow and are not separated into multiple pages.
-- Currently not setup to change how footnotes and endnotes are formatted.  Default setting is currently applied, haven't checked if this meets the guidelines.
-
 ## 1. Repo Structure
 
 In the primary folder, you will find `main.tex` which is the file that will need to be compiled each time to produce the document (`main.pdf`).  It uses a modular structure in that the scripts it calls are found in subfolders within this repo.  
