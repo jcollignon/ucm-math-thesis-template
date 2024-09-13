@@ -5,9 +5,9 @@ The most recent UC Merced Dissertation Guidelines document is found here: https:
 
 The template provided in this repository has been used to prepare my dissertation, and the content used has passed the necessary checks on the Proquest platform on July 24th, 2024.
 
-DISCLAIMER: While the tools I used to format my dissertation were compliant with the guidelines, not all guidelines applied to my document.  As such, you may encounter some elements (such as illustrations, etc) that have not been adjusted to meet the guidelines.  If you encounter anything that does not meet the current dissertation guidelines, please let me know and I will update the repo periodically.  If you have formatting code to send me so I can test to see if it works with this template, I will greatly appreciate it!
+DISCLAIMER: While the tools I used to format my dissertation were compliant with the guidelines, not all guidelines applied to my document.  As such, you may encounter some elements (such as illustrations, etc) that have not been adjusted to meet the guidelines.  If you encounter anything that does not meet the current dissertation guidelines, please let me know and I will update the repo periodically.  If you have formatting code to send me so I can test to see if it works with this template, please include this under Issues.
 
-Below is infomration on the structure of this repository, conventions used for some elements throughout the template, and other possible suggestions that have come to mind.
+Below is information on the structure of this repository, conventions used for some elements throughout the template, and other possible suggestions that have come to mind.
 
 ## 0. Current suggestions to investigate
 
