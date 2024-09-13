@@ -1,3 +1,5 @@
+# Things to Investigate
+
 ## 0. Current suggestions to investigate
 
 - Figure: In one `figure` environment, images and captions always overflow and are not separated into multiple pages.
