@@ -1,9 +1,18 @@
 # ucm-math-thesis-template
-This is a modification of the built-in `report` document class LaTeX template for writing a dissertation at UC Merced aimed at satisfying the dissertation guidelines.  Please note this repo does not contain its own `.cls` file.
-
-DISCLAIMER: THIS TEMPLATE HAS NOT YET BEEN VERIFIED OFFICIALLY TO BE SATISFACTORY ON THE PROQUEST PLATFORM.  I SHOULD HAVE AN ANSWER TO THIS BY THE END OF 2024 AND WILL UPDATE THIS ACCORDINGLY ONCE MY DISSERTATION ON THE PLATFORM IS FORMALLY APPROVED.
+This is a modification of the built-in `report` document class LaTeX template for writing a dissertation at UC Merced aimed at satisfying the dissertation guidelines.  Please note this repo does not contain its own `.cls` file.  As such, any definitions you plan to use in your dissertation will need to be directly defined by you.
 
 The most recent UC Merced Dissertation Guidelines document is found here: https://graduatedivision.ucmerced.edu/sites/graduatedivision.ucmerced.edu/files/documents/PDFs/ucm_thesis_dissertation_manual.pdf
+
+The template provided in this repository has been used to prepare my dissertation, and the content used has passed the necessary checks on the Proquest platform on July 24th, 2024.
+
+DISCLAIMER: While the tools I used to format my dissertation were compliant with the guidelines, not all guidelines applied to my document.  As such, you may encounter some elements (such as illustrations, etc) that have not been adjusted to meet the guidelines.  If you encounter anything that does not meet the current dissertation guidelines, please let me know and I will update the repo periodically.  If you have formatting code to send me so I can test to see if it works with this template, I will greatly appreciate it!
+
+Below is infomration on the structure of this repository, conventions used for some elements throughout the template, and other possible suggestions that have come to mind.
+
+## 0. Current suggestions to investigate
+
+- Figure: In one `figure` environment, images and captions always overflow and are not separated into multiple pages.
+- Currently not setup to change how footnotes and endnotes are formatted.  Default setting is currently applied, haven't checked if this meets the guidelines.
 
 ## 1. Repo Structure
 
@@ -115,9 +124,4 @@ A table block should look like the following:
 \end{figure}
 ```
 All captions for tables should be above the figure.  The list of tables should contain the title of the table, which you can enter in `List of Tables text`.  Always place `\label` immediately following the caption to ensure the correct page number is shown in the list of tables.  If the table cannot fit on the same page as the caption, the page number containing the titla and caption of the table will be referecens in the list of tables.
-
-## Current issues
-
-- Figure: In one `figure` environment, images and captions always overflow and are not separated into multiple pages.
-- Currently not setup to change how footnotes and endnotes are formatted.  Default setting is currently applied, haven't checked if this meets the guidelines.
 
