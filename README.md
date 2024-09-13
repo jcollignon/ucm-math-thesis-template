@@ -120,3 +120,14 @@ A table block should look like the following:
 ```
 All captions for tables should be above the figure.  The list of tables should contain the title of the table, which you can enter in `List of Tables text`.  Always place `\label` immediately following the caption to ensure the correct page number is shown in the list of tables.  If the table cannot fit on the same page as the caption, the page number containing the titla and caption of the table will be referecens in the list of tables.
 
+# Things to Investigate
+
+## 1. Current suggestions to investigate
+
+- Figure: In one `figure` environment, images and captions always overflow and are not separated into multiple pages.
+- Currently not setup to change how footnotes and endnotes are formatted.  Default setting is currently applied, haven't checked if this meets the guidelines.
+
+## 2. Recent Changes
+
+TBD
+
